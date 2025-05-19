@@ -1,0 +1,202 @@
+* {
+  font-family: Roboto, sans-serif; 
+}
+
+body {
+    margin: 0;
+    min-width: 1366px !important;
+    overflow: auto;
+}
+
+.App {
+    overflow: hidden;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate {
+    margin-top: -10px;
+    margin-right: -10px;
+    animation: zoomInOut 1s ease-in-out forwards;
+}
+
+/* Header component styles start */
+.toolbar-wrapper {
+    padding-right: 0 !important;
+}
+
+.load-class {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.shadowClass {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+    border-bottom: 1px solid transparent !important;
+}
+
+.borderClass {
+    border-bottom: 1px solid #eee9e9 !important;
+    box-shadow: none !important;
+}
+
+.main-wrapper {
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+}
+/* Header component styles end */
+
+/* Selection component styles start*/
+.selection-wrapper {
+    height: 458px;
+    padding: 36px 20vw 36px 24px;
+    display: flex;
+    gap: 12px;
+}
+
+.article-images {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+}
+
+.article-image {
+    width: 96px;
+    height: 96px;
+    padding: 1px;
+    object-fit: cover;
+}
+
+.article-image-invalid {
+    width: 32px;
+    height: 32px;
+    padding: 33px;
+    object-fit: cover;
+    border: 1px solid black;
+    opacity: 0.2;
+}
+
+.unSelectedImage {
+    border: 2px solid transparent !important;
+    height: 98px;
+}
+.selectedImage {
+    border: 2px solid blue !important;
+    height: 98px;
+}
+
+.article-image-active {
+    width: 458px;
+    height: 458px;
+}
+
+.article-image-active-invalid {
+    width: 96px;
+    height: 96px;
+    padding: 180px;
+    opacity: 0.2;
+    border: 2px solid grey;
+}
+
+.article-details {
+    display: flex;
+    flex-direction: column;
+}
+/* Selection component styles end*/
+
+/* Details component styles start*/
+.details-wrapper {
+    height: auto;
+    background-color: rgb(238, 238, 238);
+    padding: 24px 20vw 24px 24px;
+}
+
+.details-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 16px;
+}
+
+.details-card {
+    padding: 24px;
+    position: relative;
+}
+
+.details-card-title {
+    margin: 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee9e9;
+}
+
+.table-cell {
+    padding-left: 0 !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.chip-keyword {
+    background-color: #c2c3cc !important;
+    color: white !important;
+}
+/* Details component styles end*/
+
+/* AddToCart component styles start*/
+.add-to-cart-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart-selection-main {
+    margin-top: auto;
+}
+
+.cart-selection-header {
+    margin-right: 30px;
+}
+/* AddToCart component styles end*/
+
+
+/* common styles */
+.font-red {
+    color: #d32f2f !important;
+}
+
+.font-weight-400 {
+    font-weight: 400 !important;
+}
+
+.font-size-18 {
+    font-size: 18px !important;
+}
+
+.font-color-grey {
+    color: rgb(148, 145, 145) !important;
+}
+
+.padding-6 {
+    padding: 6px 0 !important;
+}
+
+.padding-8 {
+    padding: 8px 0 !important;
+}
+
+.padding-12 {
+    padding: 12px 0 !important;
+}
+

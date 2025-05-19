@@ -1,0 +1,40 @@
+{
+  "name": "17052025-v1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "webpack serve --mode development --open",
+    "start": "node server.js",
+    "build": "NODE_OPTIONS=--max_old_space_size=512 webpack --mode production",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "^22.x"
+  },
+  "keywords": [],
+  "author": "Manohar Jaegger Assessment",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.1.0",
+    "@mui/material": "^7.1.0",
+    "@reduxjs/toolkit": "^2.8.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.7.7",
+    "@swc/core": "^1.11.24",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "swc-loader": "^0.1.15",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
+}
